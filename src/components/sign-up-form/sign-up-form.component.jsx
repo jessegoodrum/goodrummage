@@ -1,4 +1,5 @@
 import {useState} from 'react'
+
 import { Form } from 'react-router-dom';
 import { createAuthUserWithEmailAndPassword, createUserDocumentFromAuth } from '../../utils/firebase/firebase.utils';
 import FormInput from '../form-input/form-input.component';
@@ -35,7 +36,9 @@ export default function SignUpForm(){
         }
         try {
             const {user} = await createAuthUserWithEmailAndPassword(email, password);
+
             await createUserDocumentFromAuth(user, {displayName});
+            
             resetFormFields()
 
         } catch (error) {
