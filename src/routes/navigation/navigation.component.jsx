@@ -10,7 +10,7 @@ import { CartContext } from '../../contexts/cart.context';
 import {ReactComponent as Asset} from '../../assets/Asset.svg';
 import { signOutUser } from '../../utils/firebase/firebase.utils';
 
-import './navigation.styles.scss';
+import { NavigationContainer, NavLinks, NavLink, LogoContainer } from './navigation.styles';
 
 
 
@@ -23,22 +23,21 @@ const Navigation = () => {
 
     return(
         <>
-            <div className='navigation'>
-
-                <Link className='logo-container' to='/'>
-                    <Asset className='logo' />
-                </Link>
-                
-                <div className='nav-links-container'>
-                    <Link className='nav-link' to='/shop' >SHOP</Link>
-
-                {currentUser ? (<span className='nav-link' onClick={signOutUser}>SIGN OUT</span>) : (<Link className='nav-link' to='/auth' >SIGN IN</Link>)}
-
-
-                <CartIcon />
-                </div>
-                    {isCartOpen && <CartDropdown />}
-            </div>
+            <NavigationContainer>
+            <LogoContainer to='/'>
+            <Asset className='logo' />
+          </LogoContainer>
+          
+          <NavLinks>
+            <NavLink to='/shop' >SHOP</NavLink>
+          
+          {currentUser ? (<NavLink as='span' onClick={signOutUser}>SIGN OUT</NavLink>) : (<NavLink to='/auth' >SIGN IN</NavLink>)}
+          
+          
+          <CartIcon />
+          </NavLinks>
+            {isCartOpen && <CartDropdown />}
+            </NavigationContainer>
             <Outlet />
         </>
       
@@ -46,3 +45,6 @@ const Navigation = () => {
   }
 
   export default Navigation
+
+
+

@@ -1,5 +1,5 @@
 import React from 'react';
-import CategoryMenu from '../../components/category-menu/category-menu.component';
+import Directory from '../../components/directory/directory.component';
 
 
 
@@ -7,7 +7,7 @@ function Home() {
 
   return (
     <div>
-      <CategoryMenu />
+      <Directory />
     </div>
   );
 }
