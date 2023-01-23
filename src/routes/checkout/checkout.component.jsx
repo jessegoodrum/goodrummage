@@ -2,6 +2,7 @@ import './checkout.styles.scss'
 import { useContext } from 'react'
 import { CartContext } from '../../contexts/cart.context'
 import CheckoutItem from '../../components/checkout-item/checkout-item.component'
+import ListingCreator from '../../components/listing-creator/listing-creator.component'
 
 export default function Checkout(){
 
@@ -36,6 +37,8 @@ export default function Checkout(){
                     )
                 })}
             <span className='total'>Total : ${cartTotal}</span>
+
+            <ListingCreator />
             
         </div>
     )

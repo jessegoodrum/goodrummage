@@ -15,3 +15,13 @@
     column-gap: 20px;
   }
 }
+
+
+@media (max-width: 768px) {
+  .category-preview-container {
+    max-width: 100%;
+    .preview {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
