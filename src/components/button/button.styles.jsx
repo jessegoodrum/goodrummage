@@ -41,9 +41,10 @@ background-color: #4285f4;
 
 export const InvertedButton = styled(BaseButton)`
 
-background-color: white;
+    background-color: white;
     color: black;
     border: 1px solid black;
+    
 
     &:hover {
       background-color: black;
