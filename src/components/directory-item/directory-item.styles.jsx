@@ -23,13 +23,13 @@ export const Body = styled.div `
     h2 {
       font-weight: bold;
       margin: 0 6px 0;
-      font-size: 22px;
+      font-size: 1.3em;
       color: #4a4a4a;
     }
 
     p {
       font-weight: lighter;
-      font-size: 16px;
+      font-size: 1em;
     }
 
 `
@@ -66,6 +66,11 @@ min-width: 30%;
   &:last-child {
     margin-left: 7.5px;
   }
+
+  @media screen and (max-width: 768px) {
+    min-width: 50%;
+}
+
 
 `
 

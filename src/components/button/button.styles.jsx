@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
 export const BaseButton = styled.button `
-  min-width: 165px;
+  /* min-width: 165px; */
   width: auto;
   height: 50px;
   letter-spacing: 0.5px;
-  /* line-height: 20px; */
+  line-height: 25px;
   padding: 0 35px 0 35px;
   font-size: 1rem;
   background-color: black;

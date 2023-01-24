@@ -10,24 +10,7 @@ export default function Checkout(){
 
     return(
         <div className='checkout-container'>
-            <div className='checkout-header'>
-                <div className='header-block'>
-                <span>Product</span>
-                </div>
-                <div className='header-block'>
-                <span>Description</span>
-                </div>
-                <div className='header-block'>
-                <span>Quantity</span>
-
-                </div>
-                <div className='header-block'>
-                <span>Price</span>
-                </div>
-                <div className='header-block'>
-                <span>Remove</span>
-                </div>
-            </div>
+            
       
             
                 {cartItems.map((cartItem) => {
@@ -38,8 +21,29 @@ export default function Checkout(){
                 })}
             <span className='total'>Total : ${cartTotal}</span>
 
-            <ListingCreator />
+            
             
         </div>
     )
 }
+
+// <div className='checkout-header'>
+//                 <div className='header-block'>
+//                 <span>Product</span>
+//                 </div>
+//                 <div className='header-block'>
+//                 <span>Description</span>
+//                 </div>
+//                 <div className='header-block'>
+//                 <span>Quantity</span>
+
+//                 </div>
+//                 <div className='header-block'>
+//                 <span>Price</span>
+//                 </div>
+//                 <div className='header-block'>
+//                 <span>Remove</span>
+//                 </div>
+//             </div>
+
+// <ListingCreator />

@@ -19,6 +19,7 @@ export const CartDropdownContainer = styled.div `
   ${InvertedButton} {
     margin-top: auto;
     font-size: .8rem;
+    
   }
 
   ${BaseButton},
