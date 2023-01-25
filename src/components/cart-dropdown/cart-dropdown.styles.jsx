@@ -28,6 +28,10 @@ export const CartDropdownContainer = styled.div `
     margin-top: auto;
     font-size: .79rem;
   }
+
+  @media (max-width: 768px) {
+    top: 200px;
+}
 `
 
 export const EmptyMessage = styled.span`

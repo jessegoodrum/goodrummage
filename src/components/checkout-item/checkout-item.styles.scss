@@ -1,5 +1,5 @@
 .checkout-item-container {
-  width: 100%;
+  width: 90%;
   display: flex;
   min-height: 100px;
   margin: 10px;
@@ -7,6 +7,7 @@
   padding: 15px 0;
   font-size: 20px;
   align-items: center;
+  
 
   .image-container {
     width: 23%;
@@ -22,6 +23,7 @@
   .quantity,
   .price {
     width: 23%;
+    
   }
 
   .quantity {
@@ -44,8 +46,11 @@
 
 @media (max-width: 768px) {
   .checkout-item-container {
-    margin-right: 15vw;
-  
+      font-size: 14px;
+      
+  }
+  .image-container, .name, .quantity, .price {
+      width: 100%;
   }
 
 
